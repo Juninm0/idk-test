@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meu Site</title>
+        <style>
+            body {
+                background-image: url("./idk-test/progr.png");
+                background-size: cover;
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+        
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: rgba(255, 255, 255, 0.3);
+            background-image: url("./img-sei-la.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: none;
+            color: #ffffff;
+            font-size: 16px;
+            outline: none;
+        }
+        
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #00ffff;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            background-image: url("./img-sei-la.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            font-size: 16px;
+            outline: none;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #00ff00;
+        }
+        
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-container > * {
+            margin-bottom: 10px;
+        }
+        
+        .whatsapp-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ff0000;
+            text-align: center;
+            padding: 10px 0;
+            color: #ffffff;
+            font-size: 12px;
+        }
+        
+        .footer-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .footer-buttons button {
+            padding: 10px 20px;
+            background-color: #ff00ff;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .footer-buttons button:hover {
+            background-color: #006400;
+        }
+    </style>
+
+
+</head>
+<div class="cima">
+      <div class="cima">
+          <button>Início</button>
+          <button>Sobre O Autor</button>
+          <button>Serviços</button>
+          <button>Contato</button>
+      </div>
+<body>
+    <div class="icon"></div>
+    
+    <div class="form-container">
+        <h1>Questionário de Informações e Contato</h1>
+        <form action="MSG" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=21971569103" target="_blank">Enviar mensagem pelo WhatsApp</a>
+            
+            <input type="submit" value="Enviar mensagem">
+        </form>
+    </div>
+    
+        <p>© André Junior - todos os direitos reservados</p>
+    </div>
+</body>
+</html>
